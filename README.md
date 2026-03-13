@@ -24,3 +24,16 @@ Users can search for any city to see:
 ✅ Clean glassmorphism UI  
 
 ---
+## 🛠 Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
+- OpenWeatherMap API
+- Google Fonts
+- Material Icons
+
+---
+
+
+
