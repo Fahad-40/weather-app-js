@@ -13,3 +13,14 @@ Users can search for any city to see:
 - 4-day forecast
 
 ---
+
+## 🚀 Features
+
+✅ Search weather by city name  
+✅ Real-time weather data  
+✅ 4-day forecast display  
+✅ Weather icons based on conditions  
+✅ Responsive design for mobile and desktop  
+✅ Clean glassmorphism UI  
+
+---
