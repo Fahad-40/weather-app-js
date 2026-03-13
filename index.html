@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <!-- GOOGLE SEARCH ICON  -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on" /> -->
+    <title>Weather App</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="section_msg.css">
+
+<body>
+    <!-- OUTER CONTAINER -->
+    <div class="outerContainer">
+        <!-- MAIN CONTAINER -->
+        <div class="mainContainer">
+
+            <!-- HEADER CONTAINER SEARCH  -->
+            <header class="inputContainer">
+                <input class="cityInput" type="text" placeholder="Search City">
+                <button class="searchBtn">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </button>
+            </header>
+            <!-- HEADER CONTAINER SEARCH END  -->
+
+            <section class="weatherInfo" style="display: none;">
+                <!-- LOCATION AND DATE CONATINER  -->
+
+                <div class="location-date-container">
+                    <div class="location">
+                        <span class="material-symbols-outlined">
+                            location_on
+                        </span>
+                        <h4 class="contryName">Jakarta</h4>
+                    </div>
+                    <h5 class="current-date-text regularText">Thur, 15 Jan</h5>
+                </div>
+
+                <!-- PICTURE AND CELCIUS -->
+                <div class="weather-summary-container">
+                    <img src="Asstes/weather/clouds.svg" class="weather-summary-img">
+                    <div class="weather-summary-info">
+                        <h1 class="temp-txt">29 <span>&#8451;</span></h1>
+                        <h3 class="condition-txt regularText">Clouds</h3>
+                        <h1 class="feelsLike-txt regularText"></h1>
+                    </div>
+
+                </div>
+
+                <!-- HUMIDITY AND WIND SPEED -->
+                <div class="weather-conditions-container">
+
+                    <div class="condition-item">
+                        <span class="material-symbols-outlined">
+                            water_drop
+                        </span>
+                        <div class="condition-info">
+                            <h5 class="regularText">Humidity</h5>
+                            <h5 class="humidity-value-text">55%</h5>
+                        </div>
+                    </div>
+
+                    <div class="condition-item">
+                        <span class="material-symbols-outlined">
+                            airwave
+                        </span>
+                        <div class="condition-info">
+                            <h5 class="regularText">Wind Speed</h5>
+                            <h5 class="WindSpeed">19 km/h</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- EXTRA FORECAST DAYS -->
+
+                <div class="forecast-item-container">
+<!-- 
+                    <div class="forecastItem">
+                        <h5 class="forecast-item-date regularText">16 Jan</h5>
+                        <img src="Asstes/weather/thunderstorm.svg" class="forecast-item-image alt="" srcset="">
+    <h5 class=" forecast-item-temp">29 <span>&#8451;</span></h5>
+                    </div>
+
+                    <div class="forecastItem">
+                        <h5 class="forecast-item-date regularText">16 Jan</h5>
+                        <img src="Asstes/weather/thunderstorm.svg" class="forecast-item-image alt="" srcset="">
+    <h5 class=" forecast-item-temp">29 <span>&#8451;</span></h5>
+                    </div>
+                    <div class="forecastItem">
+                        <h5 class="forecast-item-date regularText">16 Jan</h5>
+                        <img src="Asstes/weather/thunderstorm.svg" class="forecast-item-image alt="" srcset="">
+    <h5 class=" forecast-item-temp">29 <span>&#8451;</span></h5>
+                    </div>
+                    <div class="forecastItem">
+                        <h5 class="forecast-item-date regularText">16 Jan</h5>
+                        <img src="Asstes/weather/thunderstorm.svg" class="forecast-item-image alt="" srcset="">
+    <h5 class=" forecast-item-temp">29 <span>&#8451;</span></h5>
+                    </div> -->
+
+                </div>
+
+            </section>
+            <!-- MAIN SECTION ENDED -->
+
+            <!-- SEARCH CITY MESSAGE -->
+
+            <section class="searchCity section-message">
+                <img src="Asstes/message/search-city.png">
+                <div>
+                    <h1>Search City</h1>
+                    <h4 class="regularText">Find out the weather conditions of the city</h4>
+                </div>
+
+            </section>
+
+
+            <!-- NOT FOUND MESSAGE -->
+
+            <section class="notFound section-message" style="display: none;">
+                <img src="Asstes/message/not-found.png" class="message-img">
+                <div>
+                    <h1>Search City</h1>
+                    <h4 class="regularText">Find out the weather conditions of the city</h4>
+                </div>
+
+            </section>
+
+        </div> <!-- MAIN CONTAINER -->
+    </div> <!-- OUTER CONTAINER -->
+
+</body>
+<script src="script.js"></script>
+<script src="config.js"></script>
+</html>
